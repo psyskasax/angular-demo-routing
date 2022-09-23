@@ -16,3 +16,27 @@ styles.ef46db3751d8e999.css   | styles        |   0 bytes |                     
 
 Build at: 2022-09-23T09:10:05.698Z - Hash: eed81ff2e625cc6c - Time: 29830ms
 
+## Methode classique de génération des modules
+
+> ng g module module1 --module app  
+
+> ng g component module1/component1  
+
+> ng g module module2 --module app  
+
+> ng g component module2/component2  
+
+Alimentation des .html  
+Ajout des routes dans app-routing.module.ts  
+
+> npm start  
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   1.98 MB |
+main.js               | main          | 801.33 kB |
+polyfills.js          | polyfills     | 297.02 kB |
+styles.css, styles.js | styles        | 173.24 kB |
+runtime.js            | runtime       |   6.54 kB |
+
+                      | Initial Total |   3.22 MB
+
